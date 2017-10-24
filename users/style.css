@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    width: 1000px;
+    height: auto;
+    margin: 0px auto;
+}
+table{
+    border: 1px solid black;
+}
+th{
+    padding: 0px 150px 0 5px;
+}
+
+
+h1{
+    border-bottom: 2px solid gray;
+}
+.forms{
+    text-align: right;
+    margin: 5px 0 5px 0;
+}
+button{
+    float: right;
+}

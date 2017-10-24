@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+    <script>
+    $(document).ready(function(){
+
+        $(document).on('click','button', function(){
+            var text = $('.form2').val();
+            var text2 = $('.form3').val();
+            var text3 = $('.form4').val();
+            var text4 = $('.form5').val();
+            $('table').append("<tr><td>" + text + "</td><td>"+ text2+ "</td><td>"+text3+"</td><td>"+ text4+ "</td></tr>");
+        });
+    
+    });
+    </script>
+</head>
+<body>
+<div id = "wrapper">
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Adress</th>
+            <th>Contact #</th>
+        </tr>
+        
+
+    </table>
+    <div id ="userAdd">
+        <h1>Add User</h1>
+        <div class= "forms">
+            First Name: <input class = "form2" type="text" name="first_name"  value="First Name">
+        </div>
+        <div class='forms'>
+            Last Name: <input class = "form3" type="text" name="last_name"  value="Last Name">
+        </div>
+        <div class ='forms'>
+            Email Address: <input class = "form4" type="text" name="email" value="Email Address">
+        </div>
+        <div class= 'forms'>
+            Contact No.: <input class = "form5" type="text" name="Contact No."  value="Contact No.">
+        </div>
+        <button>Add User</button>
+    </div>
+
+</div>
+    
+</body>
+</html>

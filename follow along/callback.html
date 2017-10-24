@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+    <script>
+
+        function callback(){
+            $('.alert').click(function(){
+            alert('you clicked me... why?')
+        });
+        }
+    $(document).ready(function(){
+        
+        callback();
+        $('.new_btn').click(function(){
+            $("#buttons").append("<button class= 'alert'>I am a dynamically generated button!</button>");
+            callback();
+        });
+    });
+
+    </script>
+</head>
+<body>
+    <h3>static content!</h3>
+    <div>
+        <button class= 'alert'>Clcik me for a message!</button>
+        <button class= 'alert'>Clcik me for a message!</button>
+        <button class= 'alert'>Clcik me for a message!</button>
+        <button class= 'new_btn'>Clcik to add a new button!</button>
+        
+    </div>
+    <h3>Dynamically rendered contern!</h3>
+    <div id = 'buttons'>
+
+    </div>
+</body>
+</html>

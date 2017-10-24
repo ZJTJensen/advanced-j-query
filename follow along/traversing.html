@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+    <script>
+    $(document).ready(function(){
+        //you can change. parent and .sibling and . children by .children().sibling() chaining
+        $('h3, p').click(function(){
+            $(this).parent().append('<h2>So Long Space Cowboy</h2>');
+             $(this).siblings('p').hide();
+        });
+        // $('#myDiv').children().css("background-color", "green");
+       // $('#myDiv').children('h3').css('background-color', 'green');
+    });
+    </script>
+</head>
+<body>
+    <div id='myDiv'>
+        <p>Here is a paragraph. It is a Beautiful paragraph.</p>
+        <h3>Zachary Jensen</h3>
+        <h3>Katryna Johnston</h3>
+        <h3>Tim allen from home improvement</h3>
+    </div>
+</body>
+</html>
